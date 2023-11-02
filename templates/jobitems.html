@@ -1,0 +1,19 @@
+<div class="border-bottom border-info pb-2 row">
+    <div class="col-9">
+        <h4 style="color: rgb(120,120,120); margin-bottom: 4px;">
+            {{job.title}}
+        </h4>
+        <div><strong>
+            Location:</strong> {{job.location}}
+        </div>
+            {% if 'wage' in job %}
+        <div class="mb-3">
+            {{job.wage}}
+        </div>
+            {% endif %}
+
+    </div>
+    <div class="col-3">
+        <button type="button" class="btn btn-outline-primary mt-4">Apply Here</button>
+    </div>
+</div>
