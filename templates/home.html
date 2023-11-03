@@ -19,13 +19,20 @@
         </style>
     </head>
     <body>
+        {% include 'nav.html' %}
+         <img id="banner" src="https://flask-medium.ishiukwu.repl.co/static/banner.jpg" alt="Banner Image">
     <div class="container">
         <h1 class="text-center mt-2 mb-4">Charming Careers</h1>
-        <img id="banner" src="https://flask-medium.ishiukwu.repl.co/static/banner.jpg" alt="Banner Image">
-        <h2 class="text-center mt-2 mb-4">About Charming</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis varius quam quisque. Ut morbi tincidunt augue interdum velit euismod. In hac habitasse platea dictumst quisque sagittis. Porttitor eget dolor morbi non arcu risus quis. Tortor condimentum lacinia quis vel. Sed enim ut sem viverra aliquet eget sit. Integer eget aliquet nibh praesent tristique magna sit amet purus. Enim blandit volutpat maecenas volutpat blandit aliquam. Massa tempor nec feugiat nisl pretium fusce id velit ut. Aenean et tortor at risus viverra adipiscing at in. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit. In ornare quam viverra orci sagittis eu. Ut eu sem integer vitae justo eget magna. Morbi tincidunt augue interdum velit euismod in pellentesque. Egestas purus viverra accumsan in nisl nisi. Euismod quis viverra nibh cras pulvinar mattis nunc sed blandit. Risus quis varius quam quisque id diam vel quam.
+        <div class="row">
+            <div class="col-md-6">
+        <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis varius quam quisque. Ut morbi tincidunt augue interdum velit euismod. In hac habitasse platea dictumst quisque sagittis. Porttitor eget dolor morbi non arcu risus quis. Tortor condimentum lacinia quis vel. Sed enim ut sem viverra aliquet eget sit. Integer eget aliquet nibh praesent tristique magna sit amet purus. Enim blandit volutpat maecenas volutpat blandit aliquam. Massa tempor nec feugiat nisl pretium fusce id velit ut. Aenean et tortor at risus viverra adipiscing at in. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit. In ornare quam viverra orci sagittis eu. Ut eu sem integer vitae justo eget magna.
         </p>
+            </div>
+            <div class="d-none d-md-block col-md-6">
+                <img src="/static/people.jpg" style="height:320px; border-radius:5px;">
+            </div>
+        </div>
         <h2 class="text-center mt-2 mb-4">Open Positions</h2>
         <div>
             {% for job in jobs %}
@@ -33,10 +40,7 @@
             {% endfor %}
         </div>
         <div class="text-center">
-            <button class="btn btn-primary btn-lg mt-8">Contact Us</button>
-        </div>
-        <p class="text-center mt-4 mb-4">Copyright 2023, Maxim</p>
-    </
-    </div>
+            <a href="mailto:hello@example_email.com?subject=Application%20for%20the%20post%20of%20job.title&body=My%20Name%3A%20%3Cyour%20name%20here%3E%0D%0AQuestion%3A%20%3Cyour%20question%20here%3E%0D%0A" class="btn btn-primary btn-lg mt-4">Contact Us</a>
+        {% include 'footer.html' %}
     </body>
 </html>

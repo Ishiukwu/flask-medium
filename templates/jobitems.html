@@ -1,4 +1,4 @@
-<div class="border-bottom border-info pb-2 row">
+<div class="border-bottom border-info pb-1 row">
     <div class="col-9">
         <h4 style="color: rgb(120,120,120); margin-bottom: 4px;">
             {{job.title}}
@@ -7,13 +7,13 @@
             Location:</strong> {{job.location}}
         </div>
             {% if 'wage' in job %}
-        <div class="mb-3">
+        <div class="mb-2">
             {{job.wage}}
         </div>
             {% endif %}
 
     </div>
     <div class="col-3">
-        <button type="button" class="btn btn-outline-primary mt-4">Apply Here</button>
+        <a href= "mailto:hello@example_email.com?subject=Application%20for%20the%20post%20of%20{{job.title}}&body=My%20Name%3A%20%3Cyour%20name%20here%3E%0D%0AResume%3A%20%3Cyour%20resume%20here%3E%0D%0ALinkedIn%3A%20%3Cyour%20linkedin%20here%3E" type="button" class="btn btn-outline-primary mt-4 ms-5">Apply Here</a>
     </div>
 </div>
